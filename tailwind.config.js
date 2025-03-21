@@ -33,8 +33,14 @@ export default {
 		base: '500',
 		heading: '700',
 	  },
+	  fontFamily: {
+		courgette: ['Courgette', 'cursive'],
+		roboto: ['Roboto Slab', 'serif'],
+	  },
 	},
   },
   plugins: [],
 }
+
+
 
