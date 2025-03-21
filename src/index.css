@@ -3,7 +3,7 @@
 @tailwind utilities;
   
 :root {
-  --main: #FD9745;
+  --main: #fd7a4a7c;
   --overlay: rgba(0, 0, 0, 0.8); /* background color overlay for alert dialogs, modals, etc. */
 
   --bg: #fff4e0;
