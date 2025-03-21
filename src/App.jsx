@@ -15,6 +15,7 @@ function App() {
       <div className="line"></div>
       <div className="line"></div>
       <div className="line"></div>
+      <div className="line"></div>
       <div className='flex items-center justify-center mt-[250px] font-bold'>
         <Button className='font-bold'>Funciono :O</Button>
       </div>
