@@ -28,6 +28,7 @@ import {
 } from './components/ui/sheet'
 import './App.css'
 import Tools from './ReuseComp/Tools';
+import SheetCloseBtn from './ReuseComp/SheetCloseBtn';
 
 function App() {
 
@@ -41,11 +42,10 @@ function App() {
           <SheetHeader >
             <SheetTitle className='text-center text-[25px]'>Menu</SheetTitle>
           </SheetHeader>
-          <SheetFooter>
-            <SheetClose asChild className='flex justify-start items-start m-auto mt-4'>
-              <Button className='bg-[#ff8558]'>About Me</Button>
-            </SheetClose>
-          </SheetFooter>
+          <div className='flex flex-col gap-4'>
+            <SheetCloseBtn idref='About' btnName='About Me' />
+            <SheetCloseBtn idref='Skills' btnName='Skills' /> 
+          </div>
         </SheetContent>
       </Sheet>
       <div className="lines">
@@ -114,11 +114,14 @@ function App() {
             <h1 className='font-semibold text-[25px] mt-5'>Others:</h1>
             <div className='flex flex-wrap gap-4'>
               <Tools icon={FaGitAlt} name='Git' desc='Version Control' iconClass='text-orange-500' />
-              <Tools icon={TbApi} name='APIs' desc='Backend Tools' iconClass='text-black' />
+              <Tools icon={TbApi} name='APIs' desc='Application Interface' iconClass='text-black' />
               <Tools icon={RiGeminiFill} name='Gemini AI' desc='AI model' iconClass='text-blue-500' />
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        
       </div>
     </div>
   )
