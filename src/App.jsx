@@ -45,6 +45,7 @@ function App() {
           <div className='flex flex-col gap-4'>
             <SheetCloseBtn idref='About' btnName='About Me' />
             <SheetCloseBtn idref='Skills' btnName='Skills' /> 
+            <SheetCloseBtn idref='Exp' btnName='Education' /> 
           </div>
         </SheetContent>
       </Sheet>
@@ -120,8 +121,24 @@ function App() {
           </div>
         </div>
       </div>
-      <div>
-        
+      <div id='Exp' className='relative flex flex-col justify-center items-start gap-8 font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+        <h1 className='font-bold text-[38px]'>Education</h1>
+        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4'>
+          <img src="../utep.png" alt="utep" className='w-[100px] rounded-[100px]' />
+          <div>
+            <h1 className='font-semibold'>Bachelor Computer Science & Minor in Mathematics</h1>
+            <p className='italic'>The University of Texas at El Paso</p>
+            <p className='italic'>January 2025 - <b>Expected graduation:</b> December 2026</p>
+          </div>
+        </div>
+        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4'>
+          <img src="../epcc.png" alt="utep" className='w-[100px] rounded-[100px]' />
+          <div>
+            <h1 className='font-semibold'>Associates Computer Science</h1>
+            <p className='italic'>El Paso Community College</p>
+            <p className='italic'>January 2022 - December 2024 - <b>GPA:</b> 3.7/4.0 </p>
+          </div>
+        </div>
       </div>
     </div>
   )
