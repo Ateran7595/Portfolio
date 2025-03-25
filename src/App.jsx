@@ -14,6 +14,8 @@ import { RiFirebaseFill } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { RiGeminiFill } from "react-icons/ri";
+import { FiExternalLink } from "react-icons/fi";
+import { MdEmail } from "react-icons/md";
 
 
 import {
@@ -45,7 +47,8 @@ function App() {
           <div className='flex flex-col gap-4'>
             <SheetCloseBtn idref='About' btnName='About Me' />
             <SheetCloseBtn idref='Skills' btnName='Skills' /> 
-            <SheetCloseBtn idref='Exp' btnName='Education' /> 
+            <SheetCloseBtn idref='Education' btnName='Education' /> 
+            <SheetCloseBtn idref='Projects' btnName='Projects' /> 
           </div>
         </SheetContent>
       </Sheet>
@@ -74,6 +77,7 @@ function App() {
             <a href="../resume.pdf" target='__blank'><Button className='bg-yellow-100'>Resume</Button></a>
             <a href="https://github.com/Ateran7595" target='__blank'><Button ><FaGithub />Github</Button></a>
             <a href="https://www.linkedin.com/in/alejandro-teran795/" target='__blank'><Button ><FaLinkedin />LinkedIn</Button></a>
+            <Button onClick={() => window.location.href = 'mailto:alexteran795@gmail.com'}><MdEmail />Email</Button>
           </div>
         </div>
       </div>
@@ -91,7 +95,7 @@ function App() {
       </div>
       <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
         <h1 className='font-bold text-[38px]'>Skills</h1>
-        <div>
+        <div className='mb-4'>
           <div>
             <h1 className='font-semibold text-[25px]'>Frontend:</h1>  
             <div className='flex flex-wrap gap-4'>
@@ -121,9 +125,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Exp' className='relative flex flex-col justify-center items-start gap-8 font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
         <h1 className='font-bold text-[38px]'>Education</h1>
-        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4'>
+        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4 pt-2 pb-2 mt-4'>
           <img src="../utep.png" alt="utep" className='w-[100px] rounded-[100px]' />
           <div>
             <h1 className='font-semibold'>Bachelor Computer Science & Minor in Mathematics</h1>
@@ -131,12 +135,64 @@ function App() {
             <p className='italic'>January 2025 - <b>Expected graduation:</b> December 2026</p>
           </div>
         </div>
-        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4'>
+        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4 pt-2 pb-2 mt-8 mb-4'>
           <img src="../epcc.png" alt="utep" className='w-[100px] rounded-[100px]' />
           <div>
             <h1 className='font-semibold'>Associates Computer Science</h1>
             <p className='italic'>El Paso Community College</p>
             <p className='italic'>January 2022 - December 2024 - <b>GPA:</b> 3.7/4.0 </p>
+          </div>
+        </div>
+      </div>
+      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+        <h1 className='font-bold text-[38px]'>Projects</h1>
+        <div className='flex flex-col items-center justify-center gap-6 border-l-2 border-black mt-[20px] pl-4 pt-2 pb-2'>
+          <div className='flex items-center justify-center gap-4'>
+            <img src="../RTrip.png" alt="RTrip" className='w-[300px] rounded-md' />
+            <div>
+              <h1 className='font-bold text-[25px]'>RTrip - AI Travel Destination Finder</h1>
+              <ul className='list-disc pl-6'>
+                <li>Generates personalized travel plans using Gemini AI based on user preferences.</li>
+                <li>Integrates Google Places and Unsplash APIs for accurate location data and high-quality images.</li>
+                <li>Built with React, Node.js, and Firebase for a scalable and secure experience.</li>
+              </ul>
+              <div className='mt-4'>
+                <ul className='flex gap-4 font-bold items-center justify-start pl-2'>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>GeminiAI</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Firebase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className='flex justify-center gap-6 items-center w-full'>
+            <a href="https://github.com/Ateran7595/RTrip" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100' ><FaGithub />View Code</Button></a>
+            <a href="https://r-trip.vercel.app/" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100'><FiExternalLink />Live Demo</Button></a>
+          </div>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-6 border-l-2 border-black mt-[50px] pl-4 pt-2 pb-2 mb-4'>
+          <div className='flex items-center justify-center gap-4'>
+            <img src="../RPproject.png" alt="RTrip" className='w-[300px] rounded-md' />
+            <div>
+              <h1 className='font-bold text-[25px]'>Local Church Website</h1>
+              <ul className='list-disc pl-6'>
+                <li>Provides church information, beliefs, and mission in one place to engage the community.</li>
+                <li>Features an events section with a dynamic carousel, allowing admins to upload images.</li>
+                <li>Includes a newsletter feature for users to receive event updates via email.</li>
+              </ul>
+              <div className='mt-4'>
+                <ul className='flex gap-4 font-bold items-center justify-start pl-2'>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Firebase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className='flex justify-center gap-6 items-center w-full'>
+            <a href="https://github.com/Ateran7595/Roca-Potencia" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100' ><FaGithub />View Code</Button></a>
+            <a href="https://roca-potencia.vercel.app/" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100'><FiExternalLink />Live Demo</Button></a>
           </div>
         </div>
       </div>
