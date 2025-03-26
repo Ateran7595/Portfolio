@@ -150,7 +150,7 @@ function App() {
           <div className='flex items-center justify-center gap-4'>
             <img src="../RTrip.png" alt="RTrip" className='w-[300px] rounded-md' />
             <div>
-              <h1 className='font-bold xl:text-[25px] lg:text-[20px] '>RTrip - AI Travel Destination Finder</h1>
+              <h1 className='font-bold xl:text-[25px] lg:text-[20px] xl:text-start lg:text-center'>RTrip - AI Travel Destination Finder</h1>
               <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px] '>
                 <li>Generates personalized travel plans using Gemini AI based on user preferences.</li>
                 <li>Integrates Google Places and Unsplash APIs for accurate location data and high-quality images.</li>
@@ -158,10 +158,10 @@ function App() {
               </ul>
               <div className='mt-4'>
                 <ul className='flex gap-4 font-bold items-center justify-start pl-2 text-center'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>GeminiAI</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Firebase</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>GeminiAI</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
                 </ul>
               </div>
             </div>
@@ -175,7 +175,7 @@ function App() {
           <div className='flex items-center justify-center gap-4'>
             <img src="../RPproject.png" alt="RTrip" className='w-[300px] rounded-md' />
             <div>
-              <h1 className='font-bold xl:text-[25px] lg:text-[20px]'>Local Church Website</h1>
+              <h1 className='font-bold xl:text-[25px] lg:text-[20px] xl:text-start lg:text-center'>Local Church Website</h1>
               <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px]'>
                 <li>Provides church information, beliefs, and mission in one place to engage the community.</li>
                 <li>Features an events section with a dynamic carousel, allowing admins to upload images.</li>
@@ -183,9 +183,9 @@ function App() {
               </ul>
               <div className='mt-4'>
                 <ul className='flex gap-4 font-bold items-center justify-start pl-2 text-center'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Firebase</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
                 </ul>
               </div>
             </div>
