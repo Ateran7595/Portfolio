@@ -37,8 +37,8 @@ function App() {
   return (
     <div>
       <Sheet>
-        <SheetTrigger asChild className="fixed top-8 right-8 flex items-center ">
-          <Button className='font-roboto font-semibold'><IoIosMenu />Menu</Button>
+        <SheetTrigger asChild className="fixed top-8 right-8 flex items-center z-[999]">
+          <Button className='font-roboto font-semibold bg-[#fd7a4a] '><IoIosMenu />Menu</Button>
         </SheetTrigger>
         <SheetContent className='w-[350px] font-roboto'>
           <SheetHeader >
@@ -52,7 +52,7 @@ function App() {
           </div>
         </SheetContent>
       </Sheet>
-      <div className="lines">
+      <div className="fixed xs:top-[-53%] sm:top-[-40%] md:top-[-38%] lg:left-0 md:left-[-40%] xs:left-[-100%] right-0 mx-auto lg:w-[90vw] sm:w-[110vw] xs:w-[170vw] ">
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>

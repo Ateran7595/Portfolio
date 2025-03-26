@@ -14,15 +14,6 @@
     line-height: 1.6;
   }
   
-  .lines {
-    position: fixed;
-    top: -29%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 90vw;
-  }
-  
   .line {
     position: absolute;
     width: 3px; /* Increased visibility */
