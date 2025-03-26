@@ -37,10 +37,10 @@ function App() {
   return (
     <div>
       <Sheet>
-        <SheetTrigger asChild className="fixed top-8 right-8 flex items-center z-[999]">
+        <SheetTrigger asChild className="fixed top-8 right-8 flex items-center z-[998]">
           <Button className='font-roboto font-semibold bg-[#fd7a4a] '><IoIosMenu />Menu</Button>
         </SheetTrigger>
-        <SheetContent className='w-[350px] font-roboto'>
+        <SheetContent className='w-[350px] font-roboto z-[999]'>
           <SheetHeader >
             <SheetTitle className='text-center text-[25px]'>Menu</SheetTitle>
           </SheetHeader>
@@ -65,7 +65,7 @@ function App() {
         <div className="line"></div>
         <div className="line"></div>  
       </div>
-      <div className='relative flex justify-center items-center gap-8 w-[1100px]'>
+      <div className='relative flex justify-center items-center gap-8 xl:w-[1100px] lg:w-[850px] m-auto'>
         <div>
           <img src="../picture.jpg" alt="" className='w-[300px] flex rounded-[170px]' />    
         </div>
@@ -81,7 +81,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto w-[1100px] mt-[120px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[120px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
         <h1 className='font-bold text-[35px]'>About Me</h1>
         <p>
           Hello! I'm a 20-year-old undergraduate student at UTEP, currently in my junior year. Outside of school, I like to spend time developing my technical skills to prepare for any projects that come to mind. 
@@ -93,12 +93,12 @@ function App() {
           Through the projects I've built, I focus on delivering smooth user experiences and intuitive navigation. I'm actively seeking new opportunities to apply the skills I've acquired on my journey as a developer. Looking forward to connecting with you!
         </p>
       </div>
-      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
         <h1 className='font-bold text-[38px]'>Skills</h1>
         <div className='mb-4'>
           <div>
             <h1 className='font-semibold text-[25px]'>Frontend:</h1>  
-            <div className='flex flex-wrap gap-4'>
+            <div className='flex flex-wrap justify-center gap-4'>
               <Tools icon={FaReact} name='ReactJS' desc='JavaScript Library' iconClass='text-blue-500' />
               <Tools icon={FaHtml5} name='HTML' desc='Markup Language' iconClass='text-orange-600' />
               <Tools icon={FaCss3} name='CSS' desc='Styling Language' iconClass='text-blue-600' />
@@ -108,7 +108,7 @@ function App() {
           </div>
           <div>
             <h1 className='font-semibold text-[25px] mt-5'>Backend & Databases:</h1>
-            <div className='flex flex-wrap gap-4'>
+            <div className='flex flex-wrap justify-center gap-4'>
               <Tools icon={FaNodeJs} name='Node.JS' desc='JavaScript Runtime' iconClass='text-green-500' />
               <Tools icon={SiExpress} name='Express' desc='Web Framework' iconClass='text-black' />
               <Tools icon={BiLogoMongodb} name='MongoDB' desc='NoSQL Database' iconClass='text-green-400' />
@@ -117,7 +117,7 @@ function App() {
           </div>
           <div>
             <h1 className='font-semibold text-[25px] mt-5'>Others:</h1>
-            <div className='flex flex-wrap gap-4'>
+            <div className='flex flex-wrap justify-center gap-4'>
               <Tools icon={FaGitAlt} name='Git' desc='Version Control' iconClass='text-orange-500' />
               <Tools icon={TbApi} name='APIs' desc='Application Interface' iconClass='text-black' />
               <Tools icon={RiGeminiFill} name='Gemini AI' desc='AI model' iconClass='text-blue-500' />
@@ -125,7 +125,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
         <h1 className='font-bold text-[38px]'>Education</h1>
         <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4 pt-2 pb-2 mt-4'>
           <img src="../utep.png" alt="utep" className='w-[100px] rounded-[100px]' />
@@ -144,24 +144,24 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto w-[1100px] mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
         <h1 className='font-bold text-[38px]'>Projects</h1>
         <div className='flex flex-col items-center justify-center gap-6 border-l-2 border-black mt-[20px] pl-4 pt-2 pb-2'>
           <div className='flex items-center justify-center gap-4'>
             <img src="../RTrip.png" alt="RTrip" className='w-[300px] rounded-md' />
             <div>
-              <h1 className='font-bold text-[25px]'>RTrip - AI Travel Destination Finder</h1>
-              <ul className='list-disc pl-6'>
+              <h1 className='font-bold xl:text-[25px] lg:text-[20px] '>RTrip - AI Travel Destination Finder</h1>
+              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px] '>
                 <li>Generates personalized travel plans using Gemini AI based on user preferences.</li>
                 <li>Integrates Google Places and Unsplash APIs for accurate location data and high-quality images.</li>
                 <li>Built with React, Node.js, and Firebase for a scalable and secure experience.</li>
               </ul>
               <div className='mt-4'>
-                <ul className='flex gap-4 font-bold items-center justify-start pl-2'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>GeminiAI</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Firebase</li>
+                <ul className='flex gap-4 font-bold items-center justify-start pl-2 text-center'>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>GeminiAI</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Firebase</li>
                 </ul>
               </div>
             </div>
@@ -175,17 +175,17 @@ function App() {
           <div className='flex items-center justify-center gap-4'>
             <img src="../RPproject.png" alt="RTrip" className='w-[300px] rounded-md' />
             <div>
-              <h1 className='font-bold text-[25px]'>Local Church Website</h1>
-              <ul className='list-disc pl-6'>
+              <h1 className='font-bold xl:text-[25px] lg:text-[20px]'>Local Church Website</h1>
+              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px]'>
                 <li>Provides church information, beliefs, and mission in one place to engage the community.</li>
                 <li>Features an events section with a dynamic carousel, allowing admins to upload images.</li>
                 <li>Includes a newsletter feature for users to receive event updates via email.</li>
               </ul>
               <div className='mt-4'>
-                <ul className='flex gap-4 font-bold items-center justify-start pl-2'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[20px] p-[10px]'>Firebase</li>
+                <ul className='flex gap-4 font-bold items-center justify-start pl-2 text-center'>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[6px] w-[100px]'>Firebase</li>
                 </ul>
               </div>
             </div>
