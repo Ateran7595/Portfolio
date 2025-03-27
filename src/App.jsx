@@ -37,8 +37,8 @@ function App() {
   return (
     <div>
       <Sheet>
-        <SheetTrigger asChild className="fixed top-8 right-8 flex items-center z-[998]">
-          <Button className='font-roboto font-semibold bg-[#fd7a4a] '><IoIosMenu />Menu</Button>
+        <SheetTrigger asChild className="fixed sm:top-8 xs:top-4 sm:right-8 xs:right-4 flex items-center z-[998]">
+          <Button className='font-roboto font-semibold bg-[#fd7a4a94]'><IoIosMenu /></Button>
         </SheetTrigger>
         <SheetContent className='w-[350px] font-roboto z-[999]'>
           <SheetHeader >
@@ -65,15 +65,15 @@ function App() {
         <div className="line"></div>
         <div className="line"></div>  
       </div>
-      <div className='relative flex justify-center items-center gap-8 xl:w-[1100px] lg:w-[850px] m-auto'>
+      <div className='relative flex lg:flex-row xs:flex-col justify-center items-center gap-8 xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto'>
         <div>
-          <img src="../picture.jpg" alt="" className='w-[300px] flex rounded-[170px]' />    
+          <img src="../picture.jpg" alt="" className='sm:w-[300px] xs:w-[250px] m-auto flex rounded-[170px]' />    
         </div>
-        <div className='font-roboto w-[70%] flex flex-col gap-3'>
-          <h1 className='font-bold text-[40px]'>Alejandro Teran</h1> 
-          <p className='text-[18px]'>Undergraduate CS student at UTEP. Experience with Full-stack development, UI/UX, and eager to learn more about web development.</p>
+        <div className='font-roboto lg:w-[70%] md:w-[80%] flex justify-center lg:items-start lg:text-start xs:items-center xs:text-center flex-col gap-3'>
+          <h1 className='font-bold lg:text-[40px] xs:text-[30px] '>Alejandro Teran</h1> 
+          <p className='lg:text-[18px] sm:text-[16px]'>Undergraduate CS student at UTEP. Experience with Full-stack development, UI/UX, and eager to learn more about web development.</p>
           <p>📍El Paso, TX. United States.</p>
-          <div className='flex gap-4'>
+          <div className='flex flex-wrap justify-center gap-4'>
             <a href="../resume.pdf" target='__blank'><Button className='bg-yellow-100'>Resume</Button></a>
             <a href="https://github.com/Ateran7595" target='__blank'><Button ><FaGithub />Github</Button></a>
             <a href="https://www.linkedin.com/in/alejandro-teran795/" target='__blank'><Button ><FaLinkedin />LinkedIn</Button></a>
@@ -81,8 +81,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[120px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
-        <h1 className='font-bold text-[35px]'>About Me</h1>
+      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[120px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+        <h1 className='font-bold lg:text-[35px] sm:text-[30px] xs:text-[25px]'>About Me</h1>
         <p>
           Hello! I'm a 20-year-old undergraduate student at UTEP, currently in my junior year. Outside of school, I like to spend time developing my technical skills to prepare for any projects that come to mind. 
         </p>
@@ -93,11 +93,11 @@ function App() {
           Through the projects I've built, I focus on delivering smooth user experiences and intuitive navigation. I'm actively seeking new opportunities to apply the skills I've acquired on my journey as a developer. Looking forward to connecting with you!
         </p>
       </div>
-      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
-        <h1 className='font-bold text-[38px]'>Skills</h1>
+      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+        <h1 className='font-bold lg:text-[38px] sm:text-[30px] xs:text-[25px]'>Skills</h1>
         <div className='mb-4'>
           <div>
-            <h1 className='font-semibold text-[25px]'>Frontend:</h1>  
+            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px]'>Frontend:</h1>  
             <div className='flex flex-wrap justify-center gap-4'>
               <Tools icon={FaReact} name='ReactJS' desc='JavaScript Library' iconClass='text-blue-500' />
               <Tools icon={FaHtml5} name='HTML' desc='Markup Language' iconClass='text-orange-600' />
@@ -107,7 +107,7 @@ function App() {
             </div>
           </div>
           <div>
-            <h1 className='font-semibold text-[25px] mt-5'>Backend & Databases:</h1>
+            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px] mt-5'>Backend & Databases:</h1>
             <div className='flex flex-wrap justify-center gap-4'>
               <Tools icon={FaNodeJs} name='Node.JS' desc='JavaScript Runtime' iconClass='text-green-500' />
               <Tools icon={SiExpress} name='Express' desc='Web Framework' iconClass='text-black' />
@@ -116,7 +116,7 @@ function App() {
             </div>
           </div>
           <div>
-            <h1 className='font-semibold text-[25px] mt-5'>Others:</h1>
+            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px] mt-5'>Others:</h1>
             <div className='flex flex-wrap justify-center gap-4'>
               <Tools icon={FaGitAlt} name='Git' desc='Version Control' iconClass='text-orange-500' />
               <Tools icon={TbApi} name='APIs' desc='Application Interface' iconClass='text-black' />
@@ -125,39 +125,39 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
-        <h1 className='font-bold text-[38px]'>Education</h1>
-        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4 pt-2 pb-2 mt-4'>
-          <img src="../utep.png" alt="utep" className='w-[100px] rounded-[100px]' />
-          <div>
+      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+        <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Education</h1>
+        <div className='flex items-center justify-center gap-4 border-solid border-l-2 border-black pl-4 pt-2 pb-2 mt-4'>
+          <img src="../utep.png" alt="utep" className='sm:w-[100px] xs:w-[80px] rounded-[100px]' />
+          <div className='sm:text-[16px] xs:text-[14px]'>
             <h1 className='font-semibold'>Bachelor Computer Science & Minor in Mathematics</h1>
             <p className='italic'>The University of Texas at El Paso</p>
             <p className='italic'>January 2025 - <b>Expected graduation:</b> December 2026</p>
           </div>
         </div>
-        <div className='flex items-center justify-center gap-4 border-l-2 border-black pl-4 pt-2 pb-2 mt-8 mb-4'>
-          <img src="../epcc.png" alt="utep" className='w-[100px] rounded-[100px]' />
-          <div>
+        <div className='flex items-center justify-center gap-4 border-solid border-l-2 border-black pl-4 pt-2 pb-2 mt-8 mb-4'>
+          <img src="../epcc.png" alt="utep" className='sm:w-[100px] xs:w-[80px] rounded-[100px]' />
+          <div className='sm:text-[16px] xs:text-[14px]'>
             <h1 className='font-semibold'>Associates Computer Science</h1>
             <p className='italic'>El Paso Community College</p>
             <p className='italic'>January 2022 - December 2024 - <b>GPA:</b> 3.7/4.0 </p>
           </div>
         </div>
       </div>
-      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
-        <h1 className='font-bold text-[38px]'>Projects</h1>
-        <div className='flex flex-col items-center justify-center gap-6 border-l-2 border-black mt-[20px] pl-4 pt-2 pb-2'>
-          <div className='flex items-center justify-center gap-4'>
-            <img src="../RTrip.png" alt="RTrip" className='w-[300px] rounded-md' />
+      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+        <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Projects</h1>
+        <div className='flex flex-col items-center justify-center gap-6 lg:border-l-2 lg:border-b-0 xs:border-b-2 border-solid border-black mt-[20px] lg:pl-4 pt-2 lg:pb-2 xs:pb-6'>
+          <div className='flex lg:flex-row xs:flex-col items-center justify-center gap-4'>
+            <img src="../RTrip.png" alt="RTrip" className='sm:w-[300px] xs:w-[270px] rounded-md' />
             <div>
-              <h1 className='font-bold xl:text-[25px] lg:text-[20px] xl:text-start lg:text-center'>RTrip - AI Travel Destination Finder</h1>
-              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px] '>
+              <h1 className='font-bold xl:text-[25px] lg:text-[20px] sm:text-[16px] xs:text-[15px] xl:text-start xs:text-center mb-2'>RTrip - AI Travel Destination Finder</h1>
+              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px] md:text-[16px] xs:text-[14px] '>
                 <li>Generates personalized travel plans using Gemini AI based on user preferences.</li>
                 <li>Integrates Google Places and Unsplash APIs for accurate location data and high-quality images.</li>
                 <li>Built with React, Node.js, and Firebase for a scalable and secure experience.</li>
               </ul>
               <div className='mt-4'>
-                <ul className='flex gap-4 font-bold items-center justify-start pl-2 text-center'>
+                <ul className='flex flex-wrap gap-4 font-bold items-center sm:justify-start xs:justify-center pl-2 text-center'>
                   <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
                   <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
                   <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>GeminiAI</li>
@@ -171,18 +171,18 @@ function App() {
             <a href="https://r-trip.vercel.app/" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100'><FiExternalLink />Live Demo</Button></a>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center gap-6 border-l-2 border-black mt-[50px] pl-4 pt-2 pb-2 mb-4'>
-          <div className='flex items-center justify-center gap-4'>
-            <img src="../RPproject.png" alt="RTrip" className='w-[300px] rounded-md' />
+        <div className='flex flex-col items-center justify-center gap-6 lg:border-l-2 lg:border-b-0 xs:border-b-2 border-solid border-black mt-[50px] lg:pl-4 pt-2 lg:pb-2 xs:pb-6'>
+          <div className='flex lg:flex-row xs:flex-col items-center justify-center gap-4'>
+            <img src="../RPproject.png" alt="RTrip" className='sm:w-[300px] xs:w-[270px] rounded-md' />
             <div>
-              <h1 className='font-bold xl:text-[25px] lg:text-[20px] xl:text-start lg:text-center'>Local Church Website</h1>
-              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px]'>
+              <h1 className='font-bold xl:text-[25px] lg:text-[20px] sm:text-[16px] xs:text-[15px] xl:text-start xs:text-center mb-2'>Local Church Website</h1>
+              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px] md:text-[16px] xs:text-[14px]'>
                 <li>Provides church information, beliefs, and mission in one place to engage the community.</li>
                 <li>Features an events section with a dynamic carousel, allowing admins to upload images.</li>
                 <li>Includes a newsletter feature for users to receive event updates via email.</li>
               </ul>
               <div className='mt-4'>
-                <ul className='flex gap-4 font-bold items-center justify-start pl-2 text-center'>
+                <ul className='flex flex-wrap gap-4 font-bold items-center sm:justify-start xs:justify-center pl-2 text-center'>
                   <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
                   <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
                   <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
