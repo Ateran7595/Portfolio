@@ -38,7 +38,7 @@ function App() {
     <div>
       <Sheet>
         <SheetTrigger asChild className="fixed sm:top-8 xs:top-4 sm:right-8 xs:right-4 flex items-center z-[998]">
-          <Button className='font-roboto font-semibold bg-[#fd7a4a94]'><IoIosMenu /></Button>
+          <Button className='font-roboto font-semibold bg-[#fd7a4a94] hover:bg-[#ffa381]'><IoIosMenu /></Button>
         </SheetTrigger>
         <SheetContent className='w-[350px] font-roboto z-[999]'>
           <SheetHeader >
@@ -74,10 +74,10 @@ function App() {
           <p className='lg:text-[18px] sm:text-[16px]'>Undergraduate CS student at UTEP. Experience with Full-stack development, UI/UX, and eager to learn more about web development.</p>
           <p>📍El Paso, TX. United States.</p>
           <div className='flex flex-wrap justify-center gap-4'>
-            <a href="../resume.pdf" target='__blank'><Button className='bg-yellow-100'>Resume</Button></a>
-            <a href="https://github.com/Ateran7595" target='__blank'><Button ><FaGithub />Github</Button></a>
-            <a href="https://www.linkedin.com/in/alejandro-teran795/" target='__blank'><Button ><FaLinkedin />LinkedIn</Button></a>
-            <Button onClick={() => window.location.href = 'mailto:alexteran795@gmail.com'}><MdEmail />Email</Button>
+            <a href="../resume.pdf" target='__blank'><Button className='bg-yellow-100 '>Resume</Button></a>
+            <a href="https://github.com/Ateran7595" target='__blank'><Button className='hover:bg-[#ffa381]'><FaGithub />Github</Button></a>
+            <a href="https://www.linkedin.com/in/alejandro-teran795/" target='__blank'><Button className='hover:bg-[#ffa381]'><FaLinkedin />LinkedIn</Button></a>
+            <Button onClick={() => window.location.href = 'mailto:alexteran795@gmail.com'} className='hover:bg-[#ffa381]'><MdEmail />Email</Button>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ function App() {
           Hello! I'm a 20-year-old undergraduate student at UTEP, currently in my junior year. Outside of school, I like to spend time developing my technical skills to prepare for any projects that come to mind. 
         </p>
         <p>
-          I am an active member of the Web/App Development Club at my university, where I serve as an instructor—answering questions, providing dynamic examples, and fostering networking opportunities among students.
+          I am an active member of the Web/App Development Club at my university, where I serve as an instructor answering questions, providing dynamic examples, and fostering networking opportunities among students.
         </p>
         <p>
           Through the projects I've built, I focus on delivering smooth user experiences and intuitive navigation. I'm actively seeking new opportunities to apply the skills I've acquired on my journey as a developer. Looking forward to connecting with you!
@@ -158,10 +158,10 @@ function App() {
               </ul>
               <div className='mt-4'>
                 <ul className='flex flex-wrap gap-4 font-bold items-center sm:justify-start xs:justify-center pl-2 text-center'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>GeminiAI</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>GeminiAI</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
                 </ul>
               </div>
             </div>
@@ -183,9 +183,9 @@ function App() {
               </ul>
               <div className='mt-4'>
                 <ul className='flex flex-wrap gap-4 font-bold items-center sm:justify-start xs:justify-center pl-2 text-center'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
+                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
                 </ul>
               </div>
             </div>
