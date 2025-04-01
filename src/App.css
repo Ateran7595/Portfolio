@@ -20,7 +20,7 @@
     height: 2000px;
     top: -120%;
     left: 30%;
-    background: rgba(255, 255, 255, 0.1); 
+    /* background: rgba(255, 255, 255, 0.1);  */
     overflow: hidden;
     transform: rotate(50deg); /* Rotates lines diagonally */
     transform-origin: center;
