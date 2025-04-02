@@ -36,9 +36,9 @@ function App() {
 
   return (
     <div>
-      <Sheet>
+      <Sheet >
         <SheetTrigger asChild className="fixed sm:top-8 xs:top-4 sm:right-8 xs:right-4 flex items-center z-[998]">
-          <Button className='font-roboto font-semibold bg-[#fd7a4a94] hover:bg-[#ffa381]'><IoIosMenu /></Button>
+          <Button className='font-roboto font-semibold bg-[#fd7a4a94] hover:bg-[#ffa381]' data-aos="fade-zoom-in"><IoIosMenu /></Button>
         </SheetTrigger>
         <SheetContent className='w-[350px] font-roboto z-[999]'>
           <SheetHeader >
@@ -65,7 +65,7 @@ function App() {
         <div className="line"></div>
         <div className="line"></div>  
       </div>
-      <div className='relative flex lg:flex-row xs:flex-col justify-center items-center gap-8 xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto'>
+      <div className='relative flex lg:flex-row xs:flex-col justify-center items-center gap-8 xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto' data-aos="fade-zoom-in">
         <div>
           <img src="../picture.jpg" alt="" className='sm:w-[300px] xs:w-[250px] m-auto flex rounded-[170px]' />    
         </div>
@@ -81,7 +81,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[120px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[120px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[35px] sm:text-[30px] xs:text-[25px]'>About Me</h1>
         <p>
           Hello! I'm a 20-year-old undergraduate student at UTEP, currently in my junior year. Outside of school, I like to spend time developing my technical skills to prepare for any projects that come to mind. 
@@ -93,7 +93,7 @@ function App() {
           Through the projects I've built, I focus on delivering smooth user experiences and intuitive navigation. I'm actively seeking new opportunities to apply the skills I've acquired on my journey as a developer. Looking forward to connecting with you!
         </p>
       </div>
-      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] sm:text-[30px] xs:text-[25px]'>Skills</h1>
         <div className='mb-4'>
           <div>
@@ -125,7 +125,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Education</h1>
         <div className='flex items-center justify-center gap-4 border-solid border-l-2 border-black pl-4 pt-2 pb-2 mt-4'>
           <img src="../utep.png" alt="utep" className='sm:w-[100px] xs:w-[80px] rounded-[100px]' />
@@ -144,7 +144,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black'>
+      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Projects</h1>
         <div className='flex flex-col items-center justify-center gap-6 lg:border-l-2 lg:border-b-0 xs:border-b-2 border-solid border-black mt-[20px] lg:pl-4 pt-2 lg:pb-2 xs:pb-6'>
           <div className='flex lg:flex-row xs:flex-col items-center justify-center gap-4'>
