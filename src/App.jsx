@@ -31,16 +31,18 @@ import {
 import './App.css'
 import Tools from './ReuseComp/Tools';
 import SheetCloseBtn from './ReuseComp/SheetCloseBtn';
+import ProjectTool from './ReuseComp/ProjectTool';
+import ProjectInfo from './ReuseComp/ProjectInfo';
 
 function App() {
 
   return (
     <div>
-      <Sheet >
+      <Sheet className='transition-transform duration-500 ease-in-out'>
         <SheetTrigger asChild className="fixed sm:top-8 xs:top-4 sm:right-8 xs:right-4 flex items-center z-[998]">
           <Button className='font-roboto font-semibold bg-[#fd7a4a94] hover:bg-[#ffa381]' data-aos="fade-zoom-in"><IoIosMenu /></Button>
         </SheetTrigger>
-        <SheetContent className='w-[350px] font-roboto z-[999]'>
+        <SheetContent  className='w-[350px] font-roboto z-[999] '>
           <SheetHeader >
             <SheetTitle className='text-center text-[25px]'>Menu</SheetTitle>
           </SheetHeader>
@@ -146,55 +148,8 @@ function App() {
       </div>
       <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Projects</h1>
-        <div className='flex flex-col items-center justify-center gap-6 lg:border-l-2 lg:border-b-0 xs:border-b-2 border-solid border-black mt-[20px] lg:pl-4 pt-2 lg:pb-2 xs:pb-6'>
-          <div className='flex lg:flex-row xs:flex-col items-center justify-center gap-4'>
-            <img src="../RTrip.png" alt="RTrip" className='sm:w-[300px] xs:w-[270px] rounded-md' />
-            <div>
-              <h1 className='font-bold xl:text-[25px] lg:text-[20px] sm:text-[16px] xs:text-[15px] xl:text-start xs:text-center mb-2'>RTrip - AI Travel Destination Finder</h1>
-              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px] md:text-[16px] xs:text-[14px] '>
-                <li>Generates personalized travel plans using Gemini AI based on user preferences.</li>
-                <li>Integrates Google Places and Unsplash APIs for accurate location data and high-quality images.</li>
-                <li>Built with React, Node.js, and Firebase for a scalable and secure experience.</li>
-              </ul>
-              <div className='mt-4'>
-                <ul className='flex flex-wrap gap-4 font-bold items-center sm:justify-start xs:justify-center pl-2 text-center'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>GeminiAI</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className='flex justify-center gap-6 items-center w-full'>
-            <a href="https://github.com/Ateran7595/RTrip" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100' ><FaGithub />View Code</Button></a>
-            <a href="https://r-trip.vercel.app/" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100'><FiExternalLink />Live Demo</Button></a>
-          </div>
-        </div>
-        <div className='flex flex-col items-center justify-center gap-6 lg:border-l-2 lg:border-b-0 xs:border-b-2 border-solid border-black mt-[50px] lg:pl-4 pt-2 lg:pb-2 xs:pb-6'>
-          <div className='flex lg:flex-row xs:flex-col items-center justify-center gap-4'>
-            <img src="../RPproject.png" alt="RTrip" className='sm:w-[300px] xs:w-[270px] rounded-md' />
-            <div>
-              <h1 className='font-bold xl:text-[25px] lg:text-[20px] sm:text-[16px] xs:text-[15px] xl:text-start xs:text-center mb-2'>Local Church Website</h1>
-              <ul className='list-disc pl-6 xl:text-[15px] lg:text-[14px] md:text-[16px] xs:text-[14px]'>
-                <li>Provides church information, beliefs, and mission in one place to engage the community.</li>
-                <li>Features an events section with a dynamic carousel, allowing admins to upload images.</li>
-                <li>Includes a newsletter feature for users to receive event updates via email.</li>
-              </ul>
-              <div className='mt-4'>
-                <ul className='flex flex-wrap gap-4 font-bold items-center sm:justify-start xs:justify-center pl-2 text-center'>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>React</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Node.JS</li>
-                  <li className='border-solid border-2 border-black bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default rounded-[25px] xl:p-[10px] lg:p-[3px] w-[100px]'>Firebase</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className='flex justify-center gap-6 items-center w-full'>
-            <a href="https://github.com/Ateran7595/Roca-Potencia" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100' ><FaGithub />View Code</Button></a>
-            <a href="https://roca-potencia.vercel.app/" target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100'><FiExternalLink />Live Demo</Button></a>
-          </div>
-        </div>
+        <ProjectInfo imgSrc={'../RTrip.png'} name={'RTrip - AI Travel Destination Finder'} desc={'Built RTrip, a travel planner using Gemini AI to generate personalized itineraries with real-time data and images via Google Places and Unsplash APIs, powered by React, Node.js, and Firebase.'} tools={["React", 'Node.JS', 'GeminiAI', 'Firebase']} sourceCode={'https://github.com/Ateran7595/RTrip'} liveDemo={'https://r-trip.vercel.app/'} />
+        <ProjectInfo imgSrc={"../RPproject.png"} name={'Local Church Website'} desc={'Developed a local church website centralizing event details, directions, and resources, improving engagement for 100+ users.'} tools={["React", "Node.JS", "Firebase"]} sourceCode={"https://github.com/Ateran7595/Roca-Potencia"} liveDemo={"https://roca-potencia.vercel.app/"} />
       </div>
     </div>
   )
