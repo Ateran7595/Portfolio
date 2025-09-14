@@ -16,6 +16,13 @@ import { TbApi } from "react-icons/tb";
 import { RiGeminiFill } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 import { MdEmail } from "react-icons/md";
+import { FaJava } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiFastapi } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { SiPostman } from "react-icons/si";
+import { SiJira } from "react-icons/si";
 
 
 import {
@@ -75,7 +82,7 @@ function App() {
         </div>
         <div className='font-roboto lg:w-[70%] md:w-[80%] flex justify-center lg:items-start lg:text-start xs:items-center xs:text-center flex-col gap-3'>
           <h1 className='font-bold lg:text-[40px] xs:text-[30px] '>Alejandro Teran</h1> 
-          <p className='lg:text-[18px] sm:text-[16px]'>Undergraduate CS student at UTEP. Experience with Full-stack development, UI/UX, and eager to learn more about web development.</p>
+          <p className='lg:text-[18px] sm:text-[16px]'>Computer Science student at UTEP with experience in full-stack development and cloud technologies, dedicated to building scalable, user-centered applications as an aspiring Software Engineer.</p>
           <p>📍El Paso, TX. United States.</p>
           <div className='flex flex-wrap justify-center gap-4'>
             <a href="../resume.pdf" target='__blank'><Button className='bg-yellow-100 '>Resume</Button></a>
@@ -100,31 +107,43 @@ function App() {
       <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] sm:text-[30px] xs:text-[25px]'>Skills</h1>
         <div className='mb-4 w-full'>
+        <div>
+            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px]'>Programming Languages:</h1>  
+            <div className='flex flex-wrap justify-center gap-4'>
+              <Tools icon={IoLogoJavascript} name='JavaScript' iconClass='text-yellow-300' />
+              <Tools icon={FaJava} name={"Java"} iconClass={'text-red-700'} />
+              <Tools icon={FaPython} name={"Python"} iconClass={"text-blue-500"} />
+            </div>
+          </div>
           <div>
-            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px]'>Frontend:</h1>  
+            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px]'>Frontend Development:</h1>  
             <div className='flex flex-wrap justify-center gap-4'>
               <Tools icon={FaReact} name='ReactJS' iconClass='text-blue-500' />
               <Tools icon={FaHtml5} name='HTML' iconClass='text-orange-600' />
               <Tools icon={FaCss3} name='CSS' iconClass='text-blue-600' />
-              <Tools icon={IoLogoJavascript} name='JavaScript' iconClass='text-yellow-300' />
               <Tools icon={RiTailwindCssFill} name='TailwindCSS' iconClass='text-blue-500' />
             </div>
           </div>
           <div>
             <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px] mt-5'>Backend & Databases:</h1>
             <div className='flex flex-wrap justify-center gap-4'>
-              <Tools icon={FaNodeJs} name='Node.JS' desc='JavaScript Runtime' iconClass='text-green-500' />
-              <Tools icon={SiExpress} name='Express' desc='Web Framework' iconClass='text-black' />
-              <Tools icon={BiLogoMongodb} name='MongoDB' desc='NoSQL Database' iconClass='text-green-400' />
-              <Tools icon={RiFirebaseFill} name='Firebase' desc='Backend Platform' iconClass='text-yellow-400' />
+              <Tools icon={FaNodeJs} name='Node.JS' iconClass='text-green-500' />
+              <Tools icon={SiExpress} name='Express' iconClass='text-black' />
+              <Tools icon={SiFastapi} name='FastAPI' iconClass={'text-green-600'} />
+              <Tools icon={BiLogoMongodb} name='MongoDB' iconClass='text-green-500' />
+              <Tools icon={RiFirebaseFill} name='Firebase' iconClass='text-yellow-400' />
+              <Tools icon={BiLogoPostgresql} name='Postgresql' iconClass={'text-blue-600'} />
             </div>
           </div>
           <div>
-            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px] mt-5'>Others:</h1>
+            <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px] mt-5'>Cloud & Tools:</h1>
             <div className='flex flex-wrap justify-center gap-4'>
-              <Tools icon={FaGitAlt} name='Git' desc='Version Control' iconClass='text-orange-500' />
-              <Tools icon={TbApi} name='APIs' desc='Application Interface' iconClass='text-black' />
-              <Tools icon={RiGeminiFill} name='Gemini AI' desc='AI model' iconClass='text-blue-500' />
+              <Tools icon={FaAws} name={"AWS"} iconClass={'text-black'} />
+              <Tools icon={FaGitAlt} name='Git' iconClass='text-orange-500' />
+              <Tools icon={TbApi} name='REST APIs' iconClass='text-black' />
+              <Tools icon={RiGeminiFill} name='Gemini AI' iconClass='text-blue-500' />
+              <Tools icon={SiPostman} name={'Postman'} />
+              <Tools icon={SiJira} name={'Jira'} iconClass={'text-blue-500'} />
             </div>
           </div>
         </div>
