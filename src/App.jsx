@@ -99,15 +99,15 @@ function App() {
       </div>
       <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] sm:text-[30px] xs:text-[25px]'>Skills</h1>
-        <div className='mb-4'>
+        <div className='mb-4 w-full'>
           <div>
             <h1 className='font-semibold lg:text-[25px] sm:text-[22px] xs:text-[18px]'>Frontend:</h1>  
             <div className='flex flex-wrap justify-center gap-4'>
-              <Tools icon={FaReact} name='ReactJS' desc='JavaScript Library' iconClass='text-blue-500' />
-              <Tools icon={FaHtml5} name='HTML' desc='Markup Language' iconClass='text-orange-600' />
-              <Tools icon={FaCss3} name='CSS' desc='Styling Language' iconClass='text-blue-600' />
-              <Tools icon={IoLogoJavascript} name='JavaScript' desc='Programming Language' iconClass='text-yellow-300' />
-              <Tools icon={RiTailwindCssFill} name='TailwindCSS' desc='CSS Framework' iconClass='text-blue-500' />
+              <Tools icon={FaReact} name='ReactJS' iconClass='text-blue-500' />
+              <Tools icon={FaHtml5} name='HTML' iconClass='text-orange-600' />
+              <Tools icon={FaCss3} name='CSS' iconClass='text-blue-600' />
+              <Tools icon={IoLogoJavascript} name='JavaScript' iconClass='text-yellow-300' />
+              <Tools icon={RiTailwindCssFill} name='TailwindCSS' iconClass='text-blue-500' />
             </div>
           </div>
           <div>
@@ -156,7 +156,7 @@ function App() {
       <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Projects</h1>
         <ProjectInfo imgSrc={'../urtechjobs.png'} name={'URTechJobs - Job Scrapper'} desc={'Built URTechJobs to assist students in finding tech internships efficiently, leveraging scraping for up-to-date listings and Gemini AI for resume recommendations, built with React and FastAPI.'} tools={['FastAPI', 'React', 'GeminiAI']} sourceCode={'https://github.com/Ateran7595/URTechJobs'} liveDemo={'https://ur-tech-jobs.vercel.app/'} />
-        <ProjectInfo imgSrc={"../spacet.png"} name={'Space Object Tracker'} desc={"Developed a space object tracking system prototype for my University’s Department of Space, enabling scientists, space agency representatives, and administrators to monitor and analyze orbital debris and satellites, providing long-term impact analysis and density reports from CSV data."} tools={["Java"]} sourceCode={"https://github.com/Ateran7595/SpaceTrackerPR"}  />
+        <ProjectInfo imgSrc={"../spacet.png"} name={'Space Object Tracker'} desc={"Developed a space object tracking system prototype for my University’s Department of Space, enabling scientists, space agency representatives, and administrators to monitor and analyze orbital debris and satellites, providing long-term impact analysis and density reports from CSV data."} tools={["Java"]} sourceCode={"https://github.com/Ateran7595/SpaceTrackerPR"} liveDemo={''} />
         <ProjectInfo imgSrc={'../RTrip.png'} name={'RTrip - AI Travel Destination Finder'} desc={'Built RTrip, a travel planner using Gemini AI to generate personalized itineraries with real-time data and images via Google Places and Unsplash APIs, powered by React, Node.js, and Firebase.'} tools={["React", 'Node.JS', 'GeminiAI', 'Firebase']} sourceCode={'https://github.com/Ateran7595/RTrip'} liveDemo={'https://r-trip.vercel.app/'} />
         <ProjectInfo imgSrc={"../RPproject.png"} name={'Local Church Website'} desc={'Developed a local church website centralizing event details, services, directions, and resources, improving engagement for 100+ users.'} tools={["React", "Node.JS", "Firebase"]} sourceCode={"https://github.com/Ateran7595/Roca-Potencia"} liveDemo={"https://roca-potencia.vercel.app/"} />
       </div>

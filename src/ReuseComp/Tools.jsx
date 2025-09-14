@@ -2,11 +2,10 @@ import React from 'react'
 
 function Tools({ icon: Icon, name, desc, iconClass}) {
   return (
-    <div className='flex justify-center items-center gap-1 bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default lg:w-[250px] rounded-[5px] p-2 border-solid border-2 border-black'>
-        <Icon className={`text-[35px] ${iconClass}`} />
+    <div className='flex justify-center items-center gap-2 bg-[#ff9ea2] hover:bg-[#ffb2b4] cursor-default lg:w-[180px] rounded-[5px] p-2 border-solid border-2 border-black'>
+        <Icon className={`md:text-[30px] xs:text-[20px] ${iconClass}`} />
         <div className='flex flex-col leading-tight'>
-            <h1 className='font-semibold lg:text-[20px]'>{name}</h1>
-            <p className='lg:text-[15px] sm:text-[13px] xs:text-[10px]'>{desc}</p>
+            <h1 className='font-semibold lg:text-[18px] xs:text-[15px] '>{name}</h1>
         </div>
     </div> 
   )
