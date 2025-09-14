@@ -33,6 +33,7 @@ import Tools from './ReuseComp/Tools';
 import SheetCloseBtn from './ReuseComp/SheetCloseBtn';
 import ProjectTool from './ReuseComp/ProjectTool';
 import ProjectInfo from './ReuseComp/ProjectInfo';
+import ExperienceInfo from './ReuseComp/ExperienceInfo';
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
             <SheetCloseBtn idref='About' btnName='About Me' />
             <SheetCloseBtn idref='Skills' btnName='Skills' /> 
             <SheetCloseBtn idref='Education' btnName='Education' /> 
+            <SheetCloseBtn idref='Experience' btnName='Experience' /> 
             <SheetCloseBtn idref='Projects' btnName='Projects' /> 
           </div>
         </SheetContent>
@@ -146,10 +148,17 @@ function App() {
           </div>
         </div>
       </div>
+      <div id='Experience' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
+        <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Experience</h1>
+        <ExperienceInfo imgSrc={"../modo.webp"} title={"Software Developer Intern"} company={"Modo Labs"} date={'6/2025 - 8/2025'} desc={'Built features to enhance UTEP’s student experience on Modo’s AWS-based platform. I developed an advisor scheduling tool with automated filtering and Calendly integration, and a scalable events module with registration, calendar sync, and club/department filtering—improving accessibility for 5,000+ students.'} />
+        <ExperienceInfo imgSrc={"../VSV.webp"} title={'Frontend Developer Volunteeer'} company={'Visionary Solutions of Virginia'} date={'3/2025 - 6/2025'} desc={'As a Frontend Developer Volunteer at Visionary Solutions of Virginia, I created accessible, user-friendly web interfaces using Figma and Wix. I collaborated with designers and developers to optimize performance, ensure WCAG compliance, and improve user experience based on research and feedback.'} />
+      </div>
       <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Projects</h1>
+        <ProjectInfo imgSrc={'../urtechjobs.png'} name={'URTechJobs - Job Scrapper'} desc={'Built URTechJobs to assist students in finding tech internships efficiently, leveraging scraping for up-to-date listings and Gemini AI for resume recommendations, built with React and FastAPI.'} tools={['FastAPI', 'React', 'GeminiAI']} sourceCode={'https://github.com/Ateran7595/URTechJobs'} liveDemo={'https://ur-tech-jobs.vercel.app/'} />
+        <ProjectInfo imgSrc={"../spacet.png"} name={'Space Object Tracker'} desc={"Developed a space object tracking system prototype for my University’s Department of Space, enabling scientists, space agency representatives, and administrators to monitor and analyze orbital debris and satellites, providing long-term impact analysis and density reports from CSV data."} tools={["Java"]} sourceCode={"https://github.com/Ateran7595/SpaceTrackerPR"}  />
         <ProjectInfo imgSrc={'../RTrip.png'} name={'RTrip - AI Travel Destination Finder'} desc={'Built RTrip, a travel planner using Gemini AI to generate personalized itineraries with real-time data and images via Google Places and Unsplash APIs, powered by React, Node.js, and Firebase.'} tools={["React", 'Node.JS', 'GeminiAI', 'Firebase']} sourceCode={'https://github.com/Ateran7595/RTrip'} liveDemo={'https://r-trip.vercel.app/'} />
-        <ProjectInfo imgSrc={"../RPproject.png"} name={'Local Church Website'} desc={'Developed a local church website centralizing event details, directions, and resources, improving engagement for 100+ users.'} tools={["React", "Node.JS", "Firebase"]} sourceCode={"https://github.com/Ateran7595/Roca-Potencia"} liveDemo={"https://roca-potencia.vercel.app/"} />
+        <ProjectInfo imgSrc={"../RPproject.png"} name={'Local Church Website'} desc={'Developed a local church website centralizing event details, services, directions, and resources, improving engagement for 100+ users.'} tools={["React", "Node.JS", "Firebase"]} sourceCode={"https://github.com/Ateran7595/Roca-Potencia"} liveDemo={"https://roca-potencia.vercel.app/"} />
       </div>
     </div>
   )
