@@ -46,16 +46,16 @@ function App() {
 
   return (
     <div>
-      <Sheet className='transition-transform duration-500 ease-in-out'>
-        <SheetTrigger asChild className="fixed sm:top-8 xs:top-4 sm:right-8 xs:right-4 flex items-center z-[998]">
-          <Button className='font-roboto font-semibold bg-[#fd7a4a94] hover:bg-[#ffa381]' data-aos="fade-zoom-in"><IoIosMenu /></Button>
+      <Sheet className='transition-all duration-300'>
+        <SheetTrigger asChild className="fixed sm:top-8 xs:top-4 sm:right-8 xs:right-4 flex items-center z-[998] transition-all duration-300">
+          <Button className='bg-gradient-to-br from-[#2b5876] to-[#4e4376] text-white hover:from-[#244b63] hover:to-[#3f3863] transition-all duration-300' data-aos="fade-zoom-in"><IoIosMenu /></Button>
         </SheetTrigger>
-        <SheetContent  className='w-[350px] font-roboto z-[999] '>
+        <SheetContent  className='w-[350px] font-roboto z-[999] bg-[#e4e0f0] transition-all duration-300'>
           <SheetHeader >
             <SheetTitle className='text-center text-[25px]'>Menu</SheetTitle>
           </SheetHeader>
-          <div className='flex flex-col gap-4'>
-            <SheetCloseBtn idref='About' btnName='About Me' />
+          <div className='flex flex-col gap-4 transition-all duration-300'>
+            <SheetCloseBtn idref='About' btnName='About Me'  />
             <SheetCloseBtn idref='Skills' btnName='Skills' /> 
             <SheetCloseBtn idref='Education' btnName='Education' /> 
             <SheetCloseBtn idref='Experience' btnName='Experience' /> 
@@ -80,31 +80,31 @@ function App() {
         <div>
           <img src="../picture.jpg" alt="" className='sm:w-[300px] xs:w-[250px] m-auto flex rounded-[170px]' />    
         </div>
-        <div className='font-roboto lg:w-[70%] md:w-[80%] flex justify-center lg:items-start lg:text-start xs:items-center xs:text-center flex-col gap-3'>
+        <div className='font-roboto lg:w-[70%] md:w-[80%] flex justify-center lg:items-start lg:text-start xs:items-center xs:text-center flex-col gap-3 text-white'>
           <h1 className='font-bold lg:text-[40px] xs:text-[30px] '>Alejandro Teran</h1> 
-          <p className='lg:text-[18px] sm:text-[16px]'>Computer Science student at UTEP with experience in full-stack development and cloud technologies, dedicated to building scalable, user-centered applications as an aspiring Software Engineer.</p>
+          <p className='lg:text-[18px] sm:text-[16px]'>Computer Science student at UTEP with experience in full-stack development and cloud technologies, dedicated to building scalable, user-centered applications as an aspiring Software Developer.</p>
           <p>📍El Paso, TX. United States.</p>
           <div className='flex flex-wrap justify-center gap-4'>
             <a href="../resume.pdf" target='__blank'><Button className='bg-yellow-100 '>Resume</Button></a>
-            <a href="https://github.com/Ateran7595" target='__blank'><Button className='hover:bg-[#ffa381]'><FaGithub />Github</Button></a>
-            <a href="https://www.linkedin.com/in/alejandro-teran795/" target='__blank'><Button className='hover:bg-[#ffa381]'><FaLinkedin />LinkedIn</Button></a>
-            <Button onClick={() => window.location.href = 'mailto:alexteran795@gmail.com'} className='hover:bg-[#ffa381]'><MdEmail />Email</Button>
+            <a href="https://github.com/Ateran7595" target='__blank'><Button className='font-roboto font-semibold bg-gradient-to-br from-[#2b5876] to-[#4e4376] text-white hover:from-[#244b63] hover:to-[#3f3863] transition-all duration-300'><FaGithub />Github</Button></a>
+            <a href="https://www.linkedin.com/in/alejandro-teran795/" target='__blank'><Button className='font-roboto font-semibold bg-gradient-to-br from-[#2b5876] to-[#4e4376] text-white hover:from-[#244b63] hover:to-[#3f3863] transition-all duration-300'><FaLinkedin />LinkedIn</Button></a>
+            <Button onClick={() => window.location.href = 'mailto:alexteran795@gmail.com'} className='font-roboto font-semibold bg-gradient-to-br from-[#2b5876] to-[#4e4376] text-white hover:from-[#244b63] hover:to-[#3f3863] transition-all duration-300'><MdEmail />Email</Button>
           </div>
         </div>
       </div>
-      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[120px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
+      <div id='About' className='relative flex flex-col justify-center items-start gap-3 font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[120px] bg-[#e4e0f0] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[35px] sm:text-[30px] xs:text-[25px]'>About Me</h1>
         <p>
-          Hello! I'm a 20-year-old undergraduate student at UTEP, currently in my junior year. Outside of school, I like to spend time developing my technical skills to prepare for any projects that come to mind. 
+          Hello! I'm a 21-year-old undergraduate student at UTEP, currently in my senior year. Outside of school, I like to spend time developing my technical skills to prepare for any projects that come to mind. 
         </p>
         <p>
-          I am an active member of the Web/App Development Club at my university, where I serve as an instructor answering questions, providing dynamic examples, and fostering networking opportunities among students.
+          I am an active member of the Web/App Development Club at my university, where I serve as Vice-President and instructor answering questions, providing dynamic examples, and fostering networking opportunities among students.
         </p>
         <p>
           Through the projects I've built, I focus on delivering smooth user experiences and intuitive navigation. I'm actively seeking new opportunities to apply the skills I've acquired on my journey as a developer. Looking forward to connecting with you!
         </p>
       </div>
-      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
+      <div id='Skills' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#e4e0f0]  shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] sm:text-[30px] xs:text-[25px]'>Skills</h1>
         <div className='mb-4 w-full'>
         <div>
@@ -148,7 +148,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
+      <div id='Education' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#e4e0f0]  shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Education</h1>
         <div className='flex items-center justify-center gap-4 border-solid border-l-2 border-black pl-4 pt-2 pb-2 mt-4'>
           <img src="../utep.png" alt="utep" className='sm:w-[100px] xs:w-[80px] rounded-[100px]' />
@@ -167,14 +167,15 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='Experience' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
+      <div id='Experience' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#e4e0f0]  shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Experience</h1>
+        <ExperienceInfo imgSrc={"../water.png"} title={"IT Intern"} company={"El Paso Water"} date={'9/2025 - Present'} desc={'Supported enterprise IT operations at El Paso Water by diagnosing and resolving hardware and software issues, imaging and deploying 50+ devices, and managing users and device policies through Active Directory and Microsoft Intune to ensure secure, reliable system access.'} />
         <ExperienceInfo imgSrc={"../modo.webp"} title={"Software Developer Intern"} company={"Modo Labs"} date={'6/2025 - 8/2025'} desc={'Built features to enhance UTEP’s student experience on Modo’s AWS-based platform. I developed an advisor scheduling tool with automated filtering and Calendly integration, and a scalable events module with registration, calendar sync, and club/department filtering—improving accessibility for 5,000+ students.'} />
         <ExperienceInfo imgSrc={"../VSV.webp"} title={'Frontend Developer Volunteeer'} company={'Visionary Solutions of Virginia'} date={'3/2025 - 6/2025'} desc={'As a Frontend Developer Volunteer at Visionary Solutions of Virginia, I created accessible, user-friendly web interfaces using Figma and Wix. I collaborated with designers and developers to optimize performance, ensure WCAG compliance, and improve user experience based on research and feedback.'} />
       </div>
-      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#ffccba94] shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
+      <div id='Projects' className='relative flex flex-col justify-center items-start font-roboto xl:w-[1100px] lg:w-[850px] md:w-[650px] sm:w-[550px] xs:w-[350px] m-auto mt-[100px] bg-[#e4e0f0]  shadow-shadow rounded-[5px] p-4 border-solid border-2 border-black' data-aos="fade-zoom-in">
         <h1 className='font-bold lg:text-[38px] md:text-[30px] xs:text-[25px]'>Projects</h1>
-        <ProjectInfo imgSrc={'../urtechjobs.png'} name={'URTechJobs - Job Scrapper'} desc={'Built URTechJobs to assist students in finding tech internships efficiently, leveraging scraping for up-to-date listings and Gemini AI for resume recommendations, built with React and FastAPI.'} tools={['FastAPI', 'React', 'GeminiAI']} sourceCode={'https://github.com/Ateran7595/URTechJobs'} liveDemo={'https://ur-tech-jobs.vercel.app/'} />
+        <ProjectInfo imgSrc={'../urtechjobs.png'} name={'URTechJobs - Job Scrapper'} desc={'Built URTechJobs to assist students in finding tech internships efficiently, leveraging scraping for up-to-date listings and Gemini AI for resume recommendations, built with React and FastAPI.'} tools={['Python','FastAPI', 'React', 'GeminiAI']} sourceCode={'https://github.com/Ateran7595/URTechJobs'} liveDemo={'https://ur-tech-jobs.vercel.app/'} />
         <ProjectInfo imgSrc={"../spacet.png"} name={'Space Object Tracker'} desc={"Developed a space object tracking system prototype for my University’s Department of Space, enabling scientists, space agency representatives, and administrators to monitor and analyze orbital debris and satellites, providing long-term impact analysis and density reports from CSV data."} tools={["Java"]} sourceCode={"https://github.com/Ateran7595/SpaceTrackerPR"} liveDemo={''} />
         <ProjectInfo imgSrc={'../RTrip.png'} name={'RTrip - AI Travel Destination Finder'} desc={'Built RTrip, a travel planner using Gemini AI to generate personalized itineraries with real-time data and images via Google Places and Unsplash APIs, powered by React, Node.js, and Firebase.'} tools={["React", 'Node.JS', 'GeminiAI', 'Firebase']} sourceCode={'https://github.com/Ateran7595/RTrip'} liveDemo={'https://r-trip.vercel.app/'} />
         <ProjectInfo imgSrc={"../RPproject.png"} name={'Local Church Website'} desc={'Developed a local church website centralizing event details, services, directions, and resources, improving engagement for 100+ users.'} tools={["React", "Node.JS", "Firebase"]} sourceCode={"https://github.com/Ateran7595/Roca-Potencia"} liveDemo={"https://roca-potencia.vercel.app/"} />

@@ -25,8 +25,8 @@ function ProjectInfo({ imgSrc, name, desc, tools, sourceCode, liveDemo }) {
         </div>
         </div>
         <div className='flex justify-center gap-6 items-center w-full'>
-        <a href={sourceCode} target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100' ><FaGithub />Source Code</Button></a>
-        <a href={liveDemo} target='__blank' className='w-full'><Button className='w-full font-bold bg-yellow-100'><FiExternalLink />Live Demo</Button></a>
+        <a href={sourceCode} target='__blank' className='w-full'><Button className='w-full font-bold bg-gradient-to-br from-[#2b5876] to-[#4e4376] text-white hover:from-[#244b63] hover:to-[#3f3863] transition-all duration-300' ><FaGithub />Source Code</Button></a>
+        <a href={liveDemo} target='__blank' className='w-full'><Button className='w-full font-bold bg-gradient-to-br from-[#2b5876] to-[#4e4376] text-white hover:from-[#244b63] hover:to-[#3f3863] transition-all duration-300'><FiExternalLink />Live Demo</Button></a>
         </div>
     </div>
   )
